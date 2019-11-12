@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="beb20018-b1b6-44ec-97b6-68777f44463e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Procfile" beforeDir="false" afterPath="$PROJECT_DIR$/Procfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.MD" beforeDir="false" afterPath="$PROJECT_DIR$/README.MD" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/body.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/body.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/.htaccess" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -80,6 +79,7 @@
       <path value="$PROJECT_DIR$/vendor/symfony/intl" />
       <path value="$PROJECT_DIR$/vendor/symfony/form" />
       <path value="$PROJECT_DIR$/vendor/symfony/property-access" />
+      <path value="$PROJECT_DIR$/vendor/symfony/apache-pack" />
     </include_path>
   </component>
   <component name="ProjectId" id="1TUdyO9D8gxPAOx7gDYrsYYZ79v" />
@@ -138,7 +138,7 @@
       <option name="presentableId" value="Default" />
       <updated>1573518861285</updated>
       <workItem from="1573518862438" duration="17013000" />
-      <workItem from="1573565706269" duration="16745000" />
+      <workItem from="1573565706269" duration="17320000" />
     </task>
     <servers />
   </component>
