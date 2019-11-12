@@ -12,6 +12,9 @@
                         <a href="#addOrganisationModal" class="btn btn-success" data-toggle="modal"><i
                                     class="material-icons">&#xE147;</i>
                             <span>Add New Organisation</span></a>
+
+                        <a href="{{ path('app_organisations_reset') }}" class="btn btn-danger">
+                            <span>Reset All</span></a>
                     </div>
                 </div>
             </div>
@@ -32,7 +35,8 @@
                             <a href="#editOrganisationModal" class="edit" data-toggle="modal"><i class="material-icons"
                                                                                                  data-toggle="tooltip"
                                                                                                  title="Edit">&#xE254;</i></a>
-                            <a href="#deleteOrganisationModal" class="delete" data-toggle="modal"><i
+                            <a href={{ path('app_organisations_remove',{name:org.name}) }} class="delete"
+                               data-toggle="modal"><i
                                         class="material-icons"
                                         data-toggle="tooltip"
                                         title="Delete">&#xE872;</i></a>

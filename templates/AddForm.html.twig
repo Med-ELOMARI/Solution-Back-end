@@ -1,7 +1,7 @@
 <div id="addOrganisationModal" class="modal fade">
     <div class="modal-dialog">
         <div class="modal-content">
-            <form>
+            <form action="{{ path('add') }}" method="post">
                 <div class="modal-header">
                     <h4 class="modal-title">Add Organisation</h4>
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
@@ -9,23 +9,21 @@
                 <div class="modal-body">
                     <div class="form-group">
                         <label>Name</label>
-                        <input type="text" class="form-control" required>
+                        <input name='name' type="text" class="form-control" required>
                     </div>
                     <div class="form-group">
                         <label>Description</label>
-                        <textarea type="text" class="form-control" required></textarea>
+                        <textarea name='description' type="text" class="form-control" required></textarea>
                     </div>
+                    <label>Users </label>
                     <div data-role="dynamic-fields">
                         <div class="form-inline">
                             <div class="form-group">
-                                <label class="sr-only" for="field-name">Name</label>
-                                <input type="text" class="form-control" id="field-name" placeholder="Name">
-                                <label class="sr-only" for="field-password">password</label>
-                                <input type="text" class="form-control" id="field-password" placeholder="password">
-                            </div>
-                            <div class="form-group">
-                                <label class="sr-only" for="field-Roles">Roles</label>
-                                <select multiple class="form-control" id="field-Roles" name="rols" data-role="tagsinput">
+                                <input name='username' type="text" class="form-control" id="field-name" placeholder="Name">
+                                <input name='userpass' type="password" class="form-control" id="field-password"
+                                       placeholder="password">
+                                <select multiple class="form-control" id="field-Roles" name="roles"
+                                        data-role="tagsinput">
                                     <option value="ADMIN">ADMIN</option>
                                     <option value="CEO">CEO</option>
                                     <option value="CTO">CTO</option>
@@ -38,8 +36,8 @@
                             <button class="btn btn-primary" data-role="add">
                                 <span class="glyphicon glyphicon-plus"></span>
                             </button>
-                        </div>  <!-- /div.form-inline -->
-                    </div>  <!-- /div[data-role="dynamic-fields"] -->
+                        </div>
+                    </div>
                 </div>
                 <div class="modal-footer">
                     <input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
