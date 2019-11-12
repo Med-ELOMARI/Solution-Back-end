@@ -23,6 +23,7 @@
                 <tr>
                     <th>Name</th>
                     <th>description</th>
+                    <th>Total Users</th>
                     <th>Actions</th>
                 </tr>
                 </thead>
@@ -31,8 +32,9 @@
                     <tr>
                         <td>{{ org.name }}</td>
                         <td>{{ org.description }}</td>
+                        <td>{{ org.users|length }}</td>
                         <td>
-                            <a href="#editOrganisationModal" class="edit" data-toggle="modal"><i class="material-icons"
+                            <a href="#editOrganisationModal" data-target="#edit-modal" class="edit" data-toggle="modal"><i class="material-icons"
                                                                                                  data-toggle="tooltip"
                                                                                                  title="Edit">&#xE254;</i></a>
                             <a href={{ path('app_organisations_remove',{name:org.name}) }} class="delete"

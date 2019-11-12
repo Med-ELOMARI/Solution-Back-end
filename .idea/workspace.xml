@@ -2,23 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="beb20018-b1b6-44ec-97b6-68777f44463e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/organizations.yaml.BACKUP" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entity/organisation.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Form/Type/OrganisationType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/new.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/solution.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/solution.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/file.yaml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/public/organizations.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/public/organizations.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/scripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/scripts.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/OrganisationsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/OrganisationsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Services/OrganisationsService.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Services/OrganisationsService.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/AddForm.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/AddForm.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/EditForm.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/EditForm.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/body.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/body.html.twig" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -151,7 +137,7 @@
       <option name="presentableId" value="Default" />
       <updated>1573518861285</updated>
       <workItem from="1573518862438" duration="17013000" />
-      <workItem from="1573565706269" duration="13985000" />
+      <workItem from="1573565706269" duration="14866000" />
     </task>
     <servers />
   </component>

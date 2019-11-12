@@ -8,8 +8,6 @@ use App\Entity\organisation;
 use App\Form\Type\OrganisationType;
 use App\Services\OrganisationsService;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
-use Symfony\Component\Form\Extension\Core\Type\DateType;
-use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Routing\Annotation\Route;
 
@@ -22,7 +20,7 @@ class OrganisationsController extends AbstractController
     public function Home()
     {
         $organisations = OrganisationsService::loadYaml();
-            return $this->render("body.html.twig", $organisations);
+        return $this->render("body.html.twig", $organisations);
     }
 
 
@@ -40,15 +38,16 @@ class OrganisationsController extends AbstractController
         $upass = $request->request->get('userpass');
         $rols = $request->request->get('roles');
 
-        $users = array('name' => $uname, 'role' => $rols, 'password' => $upass);
-
-        for ($i = 1; $i <= (count($request->request) - 2) / 3; $i++) {
-            $uname = $request->request->get('username' . $i);
-            $upass = $request->request->get('userpass' . $i);
-            $rols = $request->request->get('roles' . $i);
-            $temp = array('name' => $uname, 'role' => $rols, 'password' => $upass);
-            array_push($users, $temp);
-
+        $user = array('name' => $uname, 'role' => $rols, 'password' => $upass);
+        $users = array($user);
+        if ((count($request->request) - 2) / 3 > 1) {
+            for ($i = 1; $i < (count($request->request) - 2) / 3; $i++) {
+                $uname = $request->request->get('username' . $i);
+                $upass = $request->request->get('userpass' . $i);
+                $rols = $request->request->get('roles' . $i);
+                $temp = array('name' => $uname, 'role' => $rols, 'password' => $upass);
+                array_push($users, $temp);
+            }
         }
         $organisations = OrganisationsService::loadYaml();
         $new_org = array('name' => $name, 'description' => $description, 'users' => $users);
