@@ -1,0 +1,52 @@
+<div id="addOrganisationModal" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <form>
+                <div class="modal-header">
+                    <h4 class="modal-title">Add Organisation</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label>Name</label>
+                        <input type="text" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Description</label>
+                        <textarea type="text" class="form-control" required></textarea>
+                    </div>
+                    <div data-role="dynamic-fields">
+                        <div class="form-inline">
+                            <div class="form-group">
+                                <label class="sr-only" for="field-name">Name</label>
+                                <input type="text" class="form-control" id="field-name" placeholder="Name">
+                                <label class="sr-only" for="field-password">password</label>
+                                <input type="text" class="form-control" id="field-password" placeholder="password">
+                            </div>
+                            <div class="form-group">
+                                <label class="sr-only" for="field-Roles">Roles</label>
+                                <select multiple class="form-control" id="field-Roles" name="rols" data-role="tagsinput">
+                                    <option value="ADMIN">ADMIN</option>
+                                    <option value="CEO">CEO</option>
+                                    <option value="CTO">CTO</option>
+                                    <option value="SALES">SALES</option>
+                                </select>
+                            </div>
+                            <button class="btn btn-danger" data-role="remove">
+                                <span class="glyphicon glyphicon-remove"></span>
+                            </button>
+                            <button class="btn btn-primary" data-role="add">
+                                <span class="glyphicon glyphicon-plus"></span>
+                            </button>
+                        </div>  <!-- /div.form-inline -->
+                    </div>  <!-- /div[data-role="dynamic-fields"] -->
+                </div>
+                <div class="modal-footer">
+                    <input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
+                    <input type="submit" class="btn btn-success" value="Add">
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+

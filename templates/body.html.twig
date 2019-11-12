@@ -1,0 +1,47 @@
+{% extends "base.html.twig" %}
+
+{% block body %}
+    <div class="container">
+        <div class="table-wrapper">
+            <div class="table-title">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <h2>Manage <b>Organisations</b></h2>
+                    </div>
+                    <div class="col-sm-6">
+                        <a href="#addOrganisationModal" class="btn btn-success" data-toggle="modal"><i
+                                    class="material-icons">&#xE147;</i>
+                            <span>Add New Organisation</span></a>
+                    </div>
+                </div>
+            </div>
+            <table class="table table-striped table-hover">
+                <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>description</th>
+                    <th>Actions</th>
+                </tr>
+                </thead>
+                <tbody>
+                {% for org in organizations %}
+                    <tr>
+                        <td>{{ org.name }}</td>
+                        <td>{{ org.description }}</td>
+                        <td>
+                            <a href="#editOrganisationModal" class="edit" data-toggle="modal"><i class="material-icons"
+                                                                                                 data-toggle="tooltip"
+                                                                                                 title="Edit">&#xE254;</i></a>
+                            <a href="#deleteOrganisationModal" class="delete" data-toggle="modal"><i
+                                        class="material-icons"
+                                        data-toggle="tooltip"
+                                        title="Delete">&#xE872;</i></a>
+                        </td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+{% endblock %}
